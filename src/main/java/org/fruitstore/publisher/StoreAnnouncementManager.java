@@ -23,6 +23,7 @@ public class StoreAnnouncementManager {
         if(subscribers == null) {
             throw new NullPointerException(CANNOT_FIND_CORRESPONDING_ANNOUNCEMENT_TYPE);
         }
+        if(subscribers.contains(subscriber)) {return;}
         subscribers.add(subscriber);
     }
 
@@ -31,6 +32,7 @@ public class StoreAnnouncementManager {
         if(subscribers == null) {
             throw new NullPointerException(CANNOT_FIND_CORRESPONDING_ANNOUNCEMENT_TYPE);
         }
+        if(!subscribers.contains(subscriber)) {return;}
         subscribers.remove(subscriber);
     }
 

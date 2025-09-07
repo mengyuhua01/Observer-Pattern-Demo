@@ -12,7 +12,7 @@ public class EmailSubscriber implements AnnouncementSubscriber {
         StringBuilder emailMessage = new StringBuilder();
         emailMessage.append(String.format("To: %s", email)).append('\n')
             .append(String.format("From: %s", storeName)).append('\n')
-            .append(String.format("Subject: %s", announcement)).append('\n')
+            .append(String.format("Subject: %s", announcementType)).append('\n')
             .append(String.format(
                 "Dear customer:\n\n%s\n\nBest regards,\n%s",  announcement, storeName));
         System.out.println("==============================");
