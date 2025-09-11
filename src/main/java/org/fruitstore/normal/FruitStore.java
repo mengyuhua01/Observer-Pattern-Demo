@@ -11,6 +11,7 @@ public class FruitStore {
     private final EmailSubscriber emailSubscriber;
     private final WeChatSubscriber weChatSubscriber;
 
+
     public static final String NEW_ARRIVAL = "New Arrival";
     public static final String DISCOUNT = "Discount";
     private  final String storeName;
